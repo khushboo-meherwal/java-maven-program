@@ -1,9 +1,11 @@
 pipeline { 
     agent any 
-    stage('Selenium test'){
+    stages {
+        stage('Selenium test'){
             bat 'C:\\Users\\ustdevops14\\eclipse-workspace\\sonarqubeproject\\testngsonarqube.bat'
         }
         stage('Sonar check') {
             bat 'C:\\Users\\ustdevops14\\eclipse-workspace\\sonarqubeproject\\sonarqubescanner.bat'
         }
+   }
 }
