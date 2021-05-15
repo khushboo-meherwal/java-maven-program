@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Sonar check') {
 		steps {
-            sh 'D:\\08052021\\java-maven-program\\sonar.bat'
+            sh 'mvn clean install sonar:sonar -Dsonar.projectKey=sonarqubeproject1 -Dsonar.sources=. -Dsonar.host.url=http://localhost:9000 -Dsonar.login=b78a131711ff6b079d9079db573e6d520a94896c'
 			}
         }
    }
