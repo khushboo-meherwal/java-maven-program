@@ -3,7 +3,7 @@ pipeline {
     stages {
 		stage ('compile Stage'){
 			steps{
-				sh 'mvn clean install'
+				bat 'mvn clean install'
 			}
 		}
         stage('Selenium test'){
