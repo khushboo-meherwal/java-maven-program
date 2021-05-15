@@ -1,0 +1,1 @@
+mvn clean install sonar:sonar -Dsonar.projectKey=sonarqubeproject -Dsonar.sources=. -Dsonar.host.url=http://localhost:9000 -Dsonar.login=7cbfad6b3ad64dbd54a39eb2e6505bad79307113
