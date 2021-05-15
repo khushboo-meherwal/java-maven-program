@@ -3,10 +3,7 @@ pipeline {
     stages {
 		stage ('compile Stage'){
 			steps{
-				WithMaven(maven :'apache-maven-3.6.3')
-				{
-					sh 'mvn clean compile'
-				}
+				sh 'mvn clean install'
 			}
 		}
         stage('Selenium test'){
