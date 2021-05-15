@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Sonar check') {
 		steps {
-            bat 'C:\\Users\\ustdevops14\\eclipse-workspace\\sonarqubeproject\\sonarqubescanner.bat'
+            bat 'D:\\08052021\\java-maven-program\\sonar.bat'
 			}
         }
    }
