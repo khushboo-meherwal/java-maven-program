@@ -3,17 +3,17 @@ pipeline {
     stages {
 		stage ('compile Stage'){
 			steps{
-				ssh 'mvn clean install'
+				sh 'mvn clean install'
 			}
 		}
         stage('Selenium test'){
 		steps {
-            ssh 'C:\\Users\\ustdevops14\\eclipse-workspace\\sonarqubeproject\\testngsonarqube.bat'
+            sh 'C:\\Users\\ustdevops14\\eclipse-workspace\\sonarqubeproject\\testngsonarqube.bat'
 			}
         }
         stage('Sonar check') {
 		steps {
-            ssh 'D:\\08052021\\java-maven-program\\sonar.bat'
+            sh 'D:\\08052021\\java-maven-program\\sonar.bat'
 			}
         }
    }
