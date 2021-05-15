@@ -1,0 +1,10 @@
+pipeline { 
+    agent any 
+    stages {
+         stage('Sonar check') {
+		steps {
+            bat 'D:\\08052021\\java-maven-program\\sonar.bat'
+			}
+        }
+   }
+}
