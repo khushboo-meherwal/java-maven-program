@@ -9,7 +9,7 @@ pipeline {
       
         stage('Sonar check') {
 		steps {
-            sh 'mvn clean install sonar:sonar -Dsonar.projectKey=sonarqubeproject1 -Dsonar.sources=. -Dsonar.host.url=http://localhost:9000 -Dsonar.login=b78a131711ff6b079d9079db573e6d520a94896c'
+            sh 'mvn clean install sonar:sonar -Dsonar.projectKey=sonarqubeproject1 -Dsonar.sources=. -Dsonar.host.url=http://40.121.154.95:9002/ -Dsonar.login=b78a131711ff6b079d9079db573e6d520a94896c'
 			}
         }
    }
