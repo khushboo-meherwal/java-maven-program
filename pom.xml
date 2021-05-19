@@ -21,7 +21,7 @@
                <version>2.2</version>
            </dependency>
        </dependencies>
-       <!-- end::joda[] -->
+       <!-- end::joda[]  -->
        
     <build>
         <plugins>
