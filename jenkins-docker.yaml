@@ -1,13 +1,15 @@
 pipeline { 
     agent any 
     stages {
-		stage ('compile Stage'){
-			steps{
-				sh 'mvn clean install'
+	stage ('compile Stage')
+	{
+	 steps {
+		sh 'mvn clean install'
 			}
 		}
             
-         stage('Sonar check') {
+         {
+	 stage ('Sonar check') {
 		steps {
             sh '/tmp/sonar.sh'
 			}
