@@ -1,0 +1,22 @@
+pipeline { 
+    agent any 
+    stages {
+		stage ('compile Stage'){
+			steps{
+				sh 'mvn clean install'
+			}
+		}
+            
+         stage('Sonar check') {
+		steps {
+            sh '/tmp/sonar.sh'
+			}
+        }
+	 {
+	     stage ('docker image') {
+	         steps{
+		 sh 'docker build -t maven .'
+		 }
+   }
+}
+}
