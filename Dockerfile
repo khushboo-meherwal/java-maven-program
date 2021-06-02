@@ -1,5 +1,5 @@
 #Docker base image : Alpine Linux with OpenJDK JRE
-FROM openjdk:8-jre-alpine
+FROM anapsix/alpine-java
 
 #Install maven
 RUN apt-get update
