@@ -1,4 +1,4 @@
-#Docker base image : Alpine Linux with OpenJDK JRE
+#Docker base image : ubuntu
 FROM ubuntu
 
 #Install maven
