@@ -1,8 +1,9 @@
 #Docker base image : Alpine Linux with OpenJDK JRE
-FROM ibmjava
+FROM ubuntu
 
 #Install maven
 RUN apt-get update
+RUN apt-get install openjdk-8-jdk
 RUN apt-get install -y maven
 
 #Set the working directory for RUN and ADD commands
