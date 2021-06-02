@@ -3,7 +3,7 @@ FROM ubuntu
 
 #Install maven
 RUN apt-get update
-RUN apt-get install -y openjdk-8-jdk
+RUN apt-get install -y default-jdk
 RUN apt-get install -y maven
 
 #Set the working directory for RUN and ADD commands
