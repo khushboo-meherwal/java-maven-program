@@ -23,4 +23,4 @@ RUN ["mvn", "install"]
 EXPOSE 8081
 
 #CMD to be executed when docker is run.
-ENTRYPOINT ["java","-jar","target/recruitment-service-0.0.1.jar"]
+ENTRYPOINT ["java","-jar","target/jb-sonar-0.1.0.jar"]
