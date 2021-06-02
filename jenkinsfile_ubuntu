@@ -6,11 +6,17 @@ pipeline {
 				sh 'mvn clean install'
 			}
 		}
-      
-        stage('Sonar check') {
+            
+         stage('Sonar check') {
 		steps {
             sh '/tmp/sonar.sh'
 			}
         }
+	 {
+	     stage ('docker image') {
+	         steps{
+		 sh 'docker build -t maven .'
+		 }
    }
+}
 }
