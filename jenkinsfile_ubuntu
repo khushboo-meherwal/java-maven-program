@@ -17,6 +17,12 @@ pipeline {
 	         steps{
 		 sh 'docker build -t maven .'
 		 }
-   }
+   } 
+           stage('Push image') {
+             docker.withRegistry('https://registry.hub.docker.com/173129', 'git') {            
+             app.push("${env.BUILD_NUMBER}")            
+             app.push("latest")        
+              }    
+           }
 }
 }
