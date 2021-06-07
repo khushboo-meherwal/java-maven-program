@@ -7,4 +7,4 @@ metadata:
 spec:
   containers:
     - name: web
-      image: 173129/latest
+      image: 173129/dockerimage1:latest
